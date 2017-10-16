@@ -1,0 +1,1 @@
+javac Deneme.java && jar cfe Deneme.jar Deneme Deneme*.class && java -jar Deneme.jar

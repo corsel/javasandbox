@@ -4,7 +4,8 @@ import javafx.scene.*;
 // import javafx.scene.paint.*;
 import javafx.scene.control.*;
 import javafx.scene.input.*;
-import javafx.geometry.Pos;
+import javafx.scene.layout.*;
+import javafx.geometry.*;
 import javafx.event.*;
 import javafx.stage.Stage;
 
@@ -20,6 +21,8 @@ public class Deneme extends Application {
 		root.getChildren().add(canvas);
 		*/
 		
+		TextField textField = new TextField("Deneme text field");
+		
 		Button button = new Button("Deneme Button");
 		button.setAlignment(Pos.CENTER);
 		button.setOnMouseClicked(new EventHandler<MouseEvent>() {
@@ -28,7 +31,13 @@ public class Deneme extends Application {
 			  button.setText("clicked!");
 			}
 		});
-		root.getChildren().add(button);
+		
+		VBox vbox = new VBox(10);
+		vbox.setPadding(new Insets(10, 10, 10, 10));
+		vbox.setPrefWidth(200);
+		vbox.getChildren().addAll(button, textField);
+		
+		root.getChildren().add(vbox);
 		
 		stage.setTitle("Deneme");
 		stage.setScene(scene);

@@ -1,7 +1,5 @@
 import javafx.application.Application;
 import javafx.scene.*;
-// import javafx.scene.canvas.*;
-// import javafx.scene.paint.*;
 import javafx.scene.control.*;
 import javafx.scene.input.*;
 import javafx.scene.layout.*;
